@@ -18,10 +18,13 @@
         "php": "^7.1.3",
         "cviebrock/eloquent-sluggable": "^4.6",
         "cviebrock/eloquent-taggable": "^3.4",
+		"composer/installers": "~1.0",
         "fideloper/proxy": "^4.0",
+        "invoiceplane/module-core":"dev-master",
         "laravel/framework": "5.7.*",
         "laravel/tinker": "^1.0",
-        "nwidart/laravel-modules": "^4.0"
+        "nwidart/laravel-modules": "^4.0",
+        "santigarcor/laratrust": "5.1.*"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
@@ -62,5 +65,11 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ]
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/underdogg/InvoicePlane-v2-Module-Core"
+        }
+    ]
 }
